@@ -20,6 +20,8 @@ const Header = () => {
                             <Nav.Link as={HashLink} to="/home">Home</Nav.Link>
                             <Nav.Link as={HashLink} to="/home#services">Services</Nav.Link>
                             <Nav.Link as={HashLink} to="/doctors">Doctors</Nav.Link>
+                            <Nav.Link as={HashLink} to="/login">Login</Nav.Link>
+                            <Nav.Link as={HashLink} to="/register">Register</Nav.Link>
                         </Nav>
                         <Form className="d-flex">
                             <Button variant="outline-info">Make an Apointment</Button>

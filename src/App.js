@@ -3,6 +3,8 @@ import './App.css';
 import Details from './Pages/Details/Details';
 import Doctors from './Pages/Doctors/Doctors';
 import Home from './Pages/Home/Home/Home';
+import Login from './Pages/Login/Login/Login';
+import Register from './Pages/Login/Register/Register';
 import Header from './Pages/Shared/Header';
 
 function App() {
@@ -22,6 +24,12 @@ function App() {
           </Route>
           <Route path="/doctors">
             <Doctors></Doctors>
+          </Route>
+          <Route path="/login">
+            <Login></Login>
+          </Route>
+          <Route path="/register">
+            <Register></Register>
           </Route>
         </Switch>
       </BrowserRouter>
