@@ -1,8 +1,10 @@
 import React from 'react';
 import { Button, Card, Col } from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
 
 const Service = (props) => {
-    const { name, img, description } = props.service;
+    const { id, name, img, description } = props.service;
+    // console.log(props.service)
     return (
         <div>
             <Col>
@@ -12,10 +14,12 @@ const Service = (props) => {
                         <Card.Title className="text-info text-center">{name}</Card.Title>
                         <Card.Text> {description}</Card.Text>
                     </Card.Body>
-                    <Button variant="outline-info">Make an Apointment</Button>
+                    <NavLink to={`details/${id}`}>
+                        <Button variant="outline-info">Details</Button>
+                    </NavLink>
                 </Card>
             </Col>
-        </div>
+        </div >
     );
 };
 

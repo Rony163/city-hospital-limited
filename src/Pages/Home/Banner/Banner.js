@@ -4,11 +4,11 @@ import { Carousel } from 'react-bootstrap';
 const Banner = () => {
     return (
         <div>
-            <Carousel>
+            <Carousel variant="dark">
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src="https://i.ibb.co/D1NqQht/banner2.jpg"
+                        src="https://thememakker.com/templates/oreo/hospital/front/assets/images/slider1.jpg"
                         alt="First slide"
                     />
                     <Carousel.Caption className="text-dark">
@@ -19,7 +19,7 @@ const Banner = () => {
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src="https://i.ibb.co/p04FwsV/Doctor-working-with-laptop-computer-and-writing-on-paperwork-Hospital-background.jpg"
+                        src="https://preview.colorlib.com/theme/docmed/img/banner/xbanner2.png.pagespeed.ic.B9cM6-Ibkd.png"
                         alt="Second slide"
                     />
 
@@ -31,7 +31,7 @@ const Banner = () => {
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src="https://i.ibb.co/Vq11dR8/banner1.jpg"
+                        src="http://demo2.themewarrior.com/hospitalplus/wp-content/uploads/sites/22/revslider/homeslider1/slider-2.jpg"
                         alt="Third slide"
                     />
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button, Container, Form, Nav, Navbar } from 'react-bootstrap';
+import { HashLink } from 'react-router-hash-link';
 import logo from '../../images/logo.png';
 
 const Header = () => {
@@ -16,8 +17,9 @@ const Header = () => {
                             style={{ maxHeight: '100px' }}
                             navbarScroll
                         >
-                            <Nav.Link href="/home">Home</Nav.Link>
-                            <Nav.Link href="/doctors">Doctors</Nav.Link>
+                            <Nav.Link as={HashLink} to="/home">Home</Nav.Link>
+                            <Nav.Link as={HashLink} to="/home#services">Services</Nav.Link>
+                            <Nav.Link as={HashLink} to="/doctors">Doctors</Nav.Link>
                         </Nav>
                         <Form className="d-flex">
                             <Button variant="outline-info">Make an Apointment</Button>
