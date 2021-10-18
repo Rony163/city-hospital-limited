@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "Prof. Dr. Mainul Haque Sarker",
+        "age": 40,
+        "specialty": "Consultant of Cardiology",
+        "img": "https://i.ibb.co/zHsNs7f/Smiling-Asian-male-doctor-pointing-upwards-Man-standing-and-looking-at-camera-Medical-product-concep.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Professor Dr. Jhunu Shamsul Alam",
+        "age": 55,
+        "specialty": "Skin,Cosmetic & Dermatosurgery",
+        "img": "https://i.ibb.co/FKcgTdj/Middle-aged-handsome-doctor-in-a-hospital.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Prof. Dr. AHM Mustafizur Rahman",
+        "age": 42,
+        "specialty": "Orthodontist",
+        "img": "https://i.ibb.co/YbShN1z/Hospital-healthcare-workers-covid-19-treatment-concept-Young-doctor-in-scrubs-making-daily-errands-c.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Dr. H.M. Mahmud Harun",
+        "age": 49,
+        "specialty": "Psychiatry Specialist",
+        "img": "https://i.ibb.co/V3jH4z6/medium-shot-smiley-man-wearing-coat.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Dr. Md. Omar Faruk",
+        "age": 43,
+        "specialty": "Surgery",
+        "img": "https://i.ibb.co/D7cFX9L/cheerful-doctor-gesturing-thumb-up.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Dr. Shikder Md. Ruhul Quddus",
+        "age": 39,
+        "specialty": "Neurologist",
+        "img": "https://i.ibb.co/WGZpxWW/Portrait-of-smiling-doctor-looking-at-camera-on-background-of-his-working-colleagues.jpg"
+    }
+]

@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "Cardiology",
+        "description": "Cardiology is the study and treatment of disorders of the heart and the blood vessels. A person with heart disease or cardiovascular disease may be referred to a cardiologist.",
+        "img": "https://i.ibb.co/Q8YN6nc/Nurse-conducts-resuscitation-Doctor-helps-woman-to-perform-the-operation-Students-practice-medicine.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Skin & Dermatosurgery",
+        "description": "Skin and Dermatologic surgeons continue to pioneer new research and treatment options.",
+        "img": "https://i.ibb.co/YB4Bh4M/Cosmetic-injection-to-the-pretty-caucasian-woman-face-and-beautician-hands-with-syringe.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Dental",
+        "description": "Abnormal alignment of the teeth and jaws was uncommon before the industrial revolution, and is absent completely in hunter-gatherer societies, as it is a diet of softer foods that causes it.",
+        "img": "https://i.ibb.co/dD82HTf/Dentist-examining-female-patient-teeth-in-clinic.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Psychiatry",
+        "description": " People who specialize in psychiatry often differ from most other mental health professionals and physicians in that they must be familiar with both the social and biological sciences.",
+        "img": "https://i.ibb.co/xF1SX04/Session-with-a-psychologist.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Surgery",
+        "description": "Surgery is a medical or dental specialty that uses operative manual and instrumental techniques on a person to investigate or treat a pathological condition such as a disease or injury.",
+        "img": "https://i.ibb.co/gDM4LJ7/doctors-doing-surgical-procedure-patient.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Neurologist",
+        "description": "Neurology is the branch of medicine concerned with the study and treatment of disorders of the nervous system.",
+        "img": "https://i.ibb.co/3rtqSrH/Back-view-of-woman-patient-wearing-performant-eeg-headset-sitting-on-chair-in-neurological-research.jpg"
+    }
+]
