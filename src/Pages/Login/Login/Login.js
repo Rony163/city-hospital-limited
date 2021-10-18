@@ -65,7 +65,7 @@ const Login = () => {
     }
 
     return (
-        <Form onSubmit={handleSignUp} className="container">
+        <Form onSubmit={handleSignUp} className="container mt-5">
             <div className="d-flex login-container">
                 <div>
                     <h1 className="ms-4">Login Here</h1>

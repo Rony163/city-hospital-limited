@@ -1,12 +1,13 @@
 import React from 'react';
-import { Button, Container, Form, Nav, Navbar } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Button, Container, Nav, Navbar } from 'react-bootstrap';
+import { Link, NavLink } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import useAuth from '../../hooks/useAuth';
 import logo from '../../images/logo.png';
 
 const Header = () => {
     const { user, logout } = useAuth();
+    // const { location } = props;
     return (
         <div>
             <Navbar fixed='top' expand="lg" className="bg-dark">
@@ -20,7 +21,7 @@ const Header = () => {
                             style={{ maxHeight: '100px' }}
                             navbarScroll
                         >
-                            <Nav.Link as={HashLink} className="text-info" to="/home">Home</Nav.Link>
+                            <Nav.Link as={HashLink} activeKey={{ backgroundColor: 'red' }} className="text-info" to="/home">Home</Nav.Link>
                             <Nav.Link as={HashLink} className="text-info" to="/home#services">Services</Nav.Link>
                             <Nav.Link as={HashLink} className="text-info" to="/doctors">Doctors</Nav.Link>
                             <Nav.Link as={HashLink} className="text-info" to="/registration">Registration</Nav.Link>
@@ -35,13 +36,13 @@ const Header = () => {
                                 <Nav.Link className="text-info me-2" as={Link} to='/login'>Login</Nav.Link>
                             </div>
                         }
-                        <Form className="d-flex">
+                        <NavLink to="/apointment">
                             <Button variant="outline-info">Make an Apointment</Button>
-                        </Form>
+                        </NavLink>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
-        </div>
+        </div >
     );
 };
 
