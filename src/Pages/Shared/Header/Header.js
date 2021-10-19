@@ -1,13 +1,15 @@
 import React from 'react';
-import { Button, Container, Nav, Navbar } from 'react-bootstrap';
+import { Button, Container, Nav, Navbar, Spinner } from 'react-bootstrap';
 import { Link, NavLink } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import useAuth from '../../../hooks/useAuth';
 import logo from '../../../images/logo.png';
 
 const Header = () => {
-    const { user, logout } = useAuth();
-    // const { location } = props;
+    const { user, logout, isLoading } = useAuth();
+    if (isLoading) {
+        return <Spinner animation="border" variant="danger" />
+    }
     return (
         <div>
             <Navbar fixed='top' expand="lg" className="bg-dark">
