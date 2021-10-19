@@ -1,30 +1,13 @@
-# Getting Started with Create React App
+# City Hospital
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Live site link of [City Hospital](https://lab1-cc58e.web.app/).
 
-## Available Scripts
+## Description
 
-In the project directory, you can run:
+In this project, you can see our services and take an apointment. For talking apointment you need to login or registration.
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* You can check our services
+* You can see the doctors of our hospital
+* You can take an apointment
+* You can easily register if you are new here
+* Also you can contact with us

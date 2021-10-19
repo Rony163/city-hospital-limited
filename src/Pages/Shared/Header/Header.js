@@ -8,7 +8,7 @@ import logo from '../../../images/logo.png';
 const Header = () => {
     const { user, logout, isLoading } = useAuth();
     if (isLoading) {
-        return <Spinner animation="border" variant="danger" />
+        return <Spinner className="text-center" animation="border" variant="danger" />
     }
     return (
         <div>
