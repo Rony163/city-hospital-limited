@@ -16,7 +16,7 @@ const Details = () => {
     return (
         <div className='mt-5 d-flex justify-content-center align-items-center flex-lg-row flex-sm-column flex-column shadow p-5 border border-5' >
             <div className='mt-5'>
-                <img style={{ width: '400px', borderRadius: '10px' }} src={matchService?.img} alt="" />
+                <img className="img-fluid" style={{ width: '400px', borderRadius: '10px' }} src={matchService?.img} alt="" />
             </div>
             <div className='w-50 ms-5'>
                 <h4>{matchService?.name}</h4>

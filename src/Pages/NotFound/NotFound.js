@@ -3,14 +3,19 @@ import { NavLink } from 'react-router-dom';
 
 const NotFound = () => {
     return (
-        <div className='mt-5'>
-            <img className='img-fluid' src='https://www.pngitem.com/pimgs/m/254-2549834_404-page-not-found-404-not-found-png.png' alt="" />
-            <br />
-            <NavLink to='/home'>
-                <button className='mt-4 bg-info rounded fs-4 border border-white text-white'>
-                    Back to Home Page
-                </button>
-            </NavLink>
+        <div className='mt-5 d-flex justify-content-center'>
+            <div >
+                <div>
+                    <img className='img-fluid' src='https://www.netclipart.com/pp/m/147-1472342_vivo-error-404-file-not-found.png' alt="" />
+                </div>
+                <br />
+
+                <div className='d-flex justify-content-center'>
+                    <NavLink to='/home'>
+                        <button className='mt-4 bg-info rounded fs-4 border border-white text-white'>Back to Home Page</button>
+                    </NavLink>
+                </div>
+            </div>
         </div>
     );
 };

@@ -1,13 +1,11 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import { getAuth, createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
-import initializeAuthentication from '../Login/Firebase/firebase.init';
 import { Form } from 'react-bootstrap';
 import { useHistory } from "react-router";
-initializeAuthentication();
+import useAuth from '../../hooks/useAuth';
 
 const Registration = () => {
-    const auth = getAuth();
+    const { registerNewUser, setUserName } = useAuth();
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -39,33 +37,15 @@ const Registration = () => {
             setError('Password must contain 2 uppercase letter');
             return;
         }
-        registerNewUser(email, password);
-    }
-    const registerNewUser = (email, password) => {
-        createUserWithEmailAndPassword(auth, email, password)
-            .then((result) => {
-                const user = result.user;
-                console.log(user);
-                setError('');
-                setUserName();
-
+        registerNewUser(email, password)
+            .then(() => {
+                alert('Registration Succesful!!! Welcome to City Hospital')
+                history.push('/home');
+                setUserName(name);
             })
-
-            .catch(error => {
+            .catch((error) => {
                 setError(error.message);
             })
-    }
-    const setUserName = () => {
-        updateProfile(auth.currentUser, {
-            displayName: name
-        }).then((result) => {
-
-        }).catch((error) => {
-
-        });
-        alert('Registration Successful!! Now you can login')
-        history.push('/login');
-
     }
 
     return (

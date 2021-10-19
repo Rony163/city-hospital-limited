@@ -7,7 +7,7 @@ const Services = () => {
     const [services] = useServices();
     // console.log(services)
     return (
-        <Row xs={1} md={3} id="services" className="g-4 m-5 mt-0">
+        <Row xs={1} md={3} id="services" className="g-4 m-2 mt-0">
             {
                 services.map(service => <Service
                     key={service.id}

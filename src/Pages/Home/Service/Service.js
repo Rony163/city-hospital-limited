@@ -16,7 +16,7 @@ const Service = (props) => {
                     </Card.Body>
                     <div className="d-flex justify-content-center">
                         <Link to={`details/${id}`}>
-                            <Button variant="outline-info">Details</Button>
+                            <Button className="mb-2" variant="outline-info">Details</Button>
                         </Link>
                     </div>
                 </Card>

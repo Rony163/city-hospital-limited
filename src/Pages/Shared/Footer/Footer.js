@@ -12,28 +12,30 @@ const Footer = () => {
                         <br />
                         <a href="#">Vision</a>
                         <br />
+                        <a href="#">work</a>
+                        <br />
                         <a href="#">Testimonials</a>
                     </div>
                     <div>
                         <h6 className='text-white'>Services</h6>
-                        <a href="#">Writing</a>
+                        <a href="#">Cardiology</a>
                         <br />
-                        <a href="#">Internships</a>
+                        <a href="#">Neurologist</a>
                         <br />
-                        <a href="#">Coding</a>
+                        <a href="#">Psychiatry</a>
                         <br />
-                        <a href="#">Teaching</a>
+                        <a href="#">Surgery</a>
                         <br />
                     </div>
                     <div>
                         <h6 className='text-white'>Contact Us</h6>
-                        <a href="#">Uttar Pradesh</a>
+                        <a href="#">Dhaka</a>
                         <br />
-                        <a href="#">Ahemdabad</a>
+                        <a href="#">Mirpur</a>
                         <br />
-                        <a href="#">Indore</a>
+                        <a href="#">Uttara</a>
                         <br />
-                        <a href="#">Mumbai</a>
+                        <a href="#">Rangpur</a>
                     </div>
                     <div>
                         <h6 className='text-white'>Social Media</h6>

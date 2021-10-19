@@ -3,14 +3,10 @@ import { NavLink } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 import { useHistory, useLocation } from 'react-router';
 import './Login.css';
-import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import { Form } from 'react-bootstrap';
-import initializeAuthentication from '../Firebase/firebase.init';
-
-initializeAuthentication();
 
 const Login = () => {
-    const auth = getAuth();
+    const { processLogIn } = useAuth();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState();
@@ -39,23 +35,14 @@ const Login = () => {
             setError('Password must contain 2 uppercase letter');
             return;
         }
-        processLogIn(email, password);
-    }
-
-    const processLogIn = (email, password) => {
-        signInWithEmailAndPassword(auth, email, password)
-            .then((result) => {
-                const user = result.user;
-                console.log(user);
-                setError('');
+        processLogIn(email, password)
+            .then(() => {
                 history.push(redirect);
             })
-
-            .catch(error => {
+            .catch((error) => {
                 setError(error.message);
             })
     }
-
 
     const manageRedirectory = () => {
         signInGoogle()

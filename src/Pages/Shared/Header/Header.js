@@ -2,8 +2,8 @@ import React from 'react';
 import { Button, Container, Nav, Navbar } from 'react-bootstrap';
 import { Link, NavLink } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
-import useAuth from '../../hooks/useAuth';
-import logo from '../../images/logo.png';
+import useAuth from '../../../hooks/useAuth';
+import logo from '../../../images/logo.png';
 
 const Header = () => {
     const { user, logout } = useAuth();
@@ -24,17 +24,19 @@ const Header = () => {
                             <Nav.Link as={HashLink} activeKey={{ backgroundColor: 'red' }} className="text-info" to="/home">Home</Nav.Link>
                             <Nav.Link as={HashLink} className="text-info" to="/home#services">Services</Nav.Link>
                             <Nav.Link as={HashLink} className="text-info" to="/doctors">Doctors</Nav.Link>
-                            <Nav.Link as={HashLink} className="text-info" to="/registration">Registration</Nav.Link>
                         </Nav>
                         {user?.email ?
                             <div className='d-flex flex-column flex-lg-row'>
                                 <Nav.Link onClick={logout} className="text-info me-2" as={Link} to='/login'>Logout</Nav.Link>
-                                <span className='mt-2 text-info m-2'>Sign in as: {user.displayName}</span>
+                                <span className='mt-2 text-info m-2'>Sign in as: <span className="text-white">{user.displayName}</span></span>
                             </div>
                             :
                             <div>
                                 <Nav.Link className="text-info me-2" as={Link} to='/login'>Login</Nav.Link>
                             </div>
+                        }
+                        {!user?.email &&
+                            <Nav.Link as={HashLink} className="text-info" to="/registration">Registration</Nav.Link>
                         }
                         <NavLink to="/apointment">
                             <Button variant="outline-info">Make an Apointment</Button>

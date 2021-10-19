@@ -10,7 +10,7 @@ import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
 import NotFound from './Pages/NotFound/NotFound';
 import Registration from './Pages/Registration/Registration';
 import Footer from './Pages/Shared/Footer/Footer';
-import Header from './Pages/Shared/Header';
+import Header from './Pages/Shared/Header/Header';
 
 function App() {
   return (
