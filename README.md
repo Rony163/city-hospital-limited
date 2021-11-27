@@ -4,10 +4,10 @@ Live site link of [City Hospital](https://lab1-cc58e.web.app/).
 
 ## Description
 
-In this project, you can see our services and take an apointment. For talking apointment you need to must login or registration otherwise you can not take apointment or you can't see our services details. 
+ In this project, users can see our services and take an appointment. For talking appointment, you must need to login or register otherwise you can not take an appointment or you can't see our service details. 
 
-* You can check our services
-* You can take an apointment
-* You can see the doctors list of our hospital
-* You can easily register if you are new here
-* Also you can contact with us
+* Users can check our services
+* Users also can take an apointment
+* For talking appointment user need to login first
+* If you are new here you can easily register
+* User can see the doctors list of our hospital
